@@ -1,14 +1,12 @@
-use std::collections::{HashMap, HashSet};
-
 fn porges_cycle(mut num: i32) -> i32 {
     let infinite_cycle_numbers: Vec<i32> = vec![4, 16, 37, 58, 89, 145, 42, 20];
-    for i in 1..1000 {
+    for _ in 1..1000 {
         if infinite_cycle_numbers.contains(&num) {
             return num as i32;
         }
         num = cycle(num);
     }
-    return -1;
+    -1
 }
 
 fn cycle(num: i32) -> i32 {
