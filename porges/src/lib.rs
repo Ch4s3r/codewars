@@ -1,4 +1,4 @@
-fn porges_cycle(mut num: i32) -> i32 {
+pub fn porges_cycle(mut num: i32) -> i32 {
     let infinite_cycle_numbers: Vec<i32> = vec![4, 16, 37, 58, 89, 145, 42, 20];
     for _ in 1..1000 {
         if infinite_cycle_numbers.contains(&num) {
@@ -9,7 +9,7 @@ fn porges_cycle(mut num: i32) -> i32 {
     -1
 }
 
-fn cycle(num: i32) -> i32 {
+pub fn cycle(num: i32) -> i32 {
     num.to_string()
         .chars()
         .filter_map(|char| char.to_digit(10))

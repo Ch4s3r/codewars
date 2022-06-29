@@ -1,6 +1,4 @@
-#![allow(dead_code)]
-
-fn spin_words(words: &str) -> String {
+pub fn spin_words(words: &str) -> String {
     words
         .split_ascii_whitespace()
         .map(|word| {
