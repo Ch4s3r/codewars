@@ -1,2 +1,2 @@
 [workspace]
-members = ["word_spin"]
+members = ["word_spin", "porges"]
