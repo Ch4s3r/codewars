@@ -1,2 +1,7 @@
 [workspace]
-members = ["word_spin", "porges", "strong_number"]
+members = [
+    "word_spin",
+    "porges",
+    "strong_number",
+    "einsteing_triangle",
+]
