@@ -5,4 +5,5 @@ members = [
     "strong_number",
     "einsteing_triangle",
     "valid_parentheses",
+    "century"
 ]
